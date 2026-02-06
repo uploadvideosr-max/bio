@@ -17,7 +17,7 @@ body {
   justify-content:center;
   align-items:flex-start;
   min-height:100vh;
-  padding:80px 20px 20px; /* Dodan padding-top zbog loga */
+  padding:20px;
 }
 
 .container {
@@ -88,33 +88,17 @@ body {
   color:#00c6ff;
 }
 
-/* Logo centriran i blinking */
-.logo {
-  position: fixed;
-  top: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100px;
-  height: 100px;
-  z-index: 1000;
-  cursor: pointer;
-  animation: blink 1s linear infinite;
-}
-
+/* Animacija treptanja loga */
 @keyframes blink {
   0%, 50%, 100% { opacity: 1; }
   25%, 75% { opacity: 0.2; }
 }
 
-/* Responsive za mobilne uređaje */
+/* Responsive prilagodba za mobilne uređaje */
 @media (max-width: 600px) {
-  .logo {
+  .logo-container img {
     width: 60px;
     height: 60px;
-    top: 8px;
-  }
-  body {
-    padding-top: 70px;
   }
 }
 </style>
@@ -122,10 +106,12 @@ body {
 
 <body>
 
-<!-- Centrirani Balkan Media logo -->
-<a href="https://www.balkanmedia.com" target="_blank">
-  <img src="images/edfc160d-608b-42ec-b685-d1404131fbf4.png" alt="Balkan Media Logo" class="logo">
-</a>
+<!-- Logo iznad teksta -->
+<div class="logo-container" style="text-align:center; margin-bottom:20px;">
+  <img src="images/edfc160d-608b-42ec-b685-d1404131fbf4.png" 
+       alt="Balkan Media Logo" 
+       style="width:100px; height:100px; animation:blink 1s linear infinite;">
+</div>
 
 <div class="container">
 
@@ -137,8 +123,7 @@ body {
   </p>
 </div>
 
-<!-- APLIKACIJE -->
-
+<!-- Aplikacije -->
 <div class="app">
 <img src="images/balkanmedia.png">
 <h3>Balkan Media</h3>
@@ -275,6 +260,5 @@ function copyCode(code) {
 }
 </script>
 
-</div>
 </body>
 </html>
