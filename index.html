@@ -110,4 +110,61 @@ body {
 <div class="container">
 
 <div class="intro">
-  <h1>Dobrodošli na
+  <h1>Dobrodošli na Balkan Media</h1>
+  <p>
+    Ovde možete pronaći <b>ANDROID aplikacije</b>.<br>
+    Možete instalirati direktnim klikom ili kopirati kod za <b>DOWNLOADER</b>.
+  </p>
+</div>
+
+<!-- APLIKACIJE -->
+
+<div class="app">
+<img src="images/balkanmedia.png">
+<h3>Balkan Media</h3>
+<a href="https://www.megadisk.net/cloud11/index.php/s/KqBJaTyO0zJzWFD/download" class="btn">Preuzmi aplikaciju</a>
+<p class="code" onclick="copyCode('8342292')">Downloader kod: <b>8342292</b></p>
+</div>
+
+<div class="app">
+<img src="images/anesa.png">
+<h3>Anesa</h3>
+<a href="https://www.megadisk.net/cloud11/index.php/s/agGDWOJ3wjvZiIE/download" class="btn">Preuzmi aplikaciju</a>
+<p class="code" onclick="copyCode('7529911')">Downloader kod: <b>7529911</b></p>
+</div>
+
+<div class="app">
+<img src="images/balkansky.png">
+<h3>Balkan Sky</h3>
+<a href="https://www.megadisk.net/cloud11/index.php/s/SaC9IGtv5PvAHnU/download" class="btn">Preuzmi aplikaciju</a>
+<p class="code" onclick="copyCode('3632856')">Downloader kod: <b>3632856</b></p>
+</div>
+
+<div class="app">
+<img src="images/powertv.png">
+<h3>Power TV</h3>
+<a href="https://www.megadisk.net/cloud11/index.php/s/er1SnoobETTOLFw/download" class="btn">Preuzmi aplikaciju</a>
+<p class="code" onclick="copyCode('7291634')">Downloader kod: <b>7291634</b></p>
+</div>
+
+<div class="app">
+<img src="images/panthertv.png">
+<h3>Panther TV</h3>
+<a href="https://smart.panthertv.live/PantherTV.apk" class="btn">Preuzmi aplikaciju</a>
+<p class="code" onclick="copyCode('145452')">Downloader kod: <b>145452</b></p>
+</div>
+
+<!-- možeš dodavati dalje aplikacije bez problema -->
+
+</div>
+
+<script>
+function copyCode(code) {
+  navigator.clipboard.writeText(code)
+    .then(() => alert("Kod je kopiran: " + code))
+    .catch(() => alert("Greška pri kopiranju"));
+}
+</script>
+
+</body>
+</html>
