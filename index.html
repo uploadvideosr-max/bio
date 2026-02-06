@@ -34,6 +34,13 @@ body {
   box-shadow: 0 4px 15px rgba(0,0,0,0.3);
 }
 
+.intro .logo {
+  width:100px;
+  height:100px;
+  margin-bottom:15px;
+  animation: blink 1s linear infinite;
+}
+
 .intro h1 {
   margin: 0 0 10px 0;
   font-size: 24px;
@@ -88,17 +95,16 @@ body {
   color:#00c6ff;
 }
 
-/* Animacija treptanja loga */
 @keyframes blink {
   0%, 50%, 100% { opacity: 1; }
   25%, 75% { opacity: 0.2; }
 }
 
-/* Responsive prilagodba za mobilne uređaje */
+/* Responsive za mobilne uređaje */
 @media (max-width: 600px) {
-  .logo-container img {
-    width: 60px;
-    height: 60px;
+  .intro .logo {
+    width:60px;
+    height:60px;
   }
 }
 </style>
@@ -106,16 +112,12 @@ body {
 
 <body>
 
-<!-- Logo iznad teksta -->
-<div class="logo-container" style="text-align:center; margin-bottom:20px;">
-  <img src="images/edfc160d-608b-42ec-b685-d1404131fbf4.png" 
-       alt="Balkan Media Logo" 
-       style="width:100px; height:100px; animation:blink 1s linear infinite;">
-</div>
-
 <div class="container">
 
 <div class="intro">
+  <!-- Logo direktno iznad teksta -->
+  <img src="images/edfc160d-608b-42ec-b685-d1404131fbf4.png" alt="Balkan Media Logo" class="logo">
+  
   <h1>Dobrodošli na Balkan Media</h1>
   <p>
     Ovde možete pronaći <b>ANDROID aplikacije</b>.<br>
@@ -260,5 +262,6 @@ function copyCode(code) {
 }
 </script>
 
+</div>
 </body>
 </html>
